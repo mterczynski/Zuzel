@@ -1,0 +1,13 @@
+{
+  "name": "zuzel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Michał Terczyński",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "scripts":{
+    "start":"node server.js"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Żużel</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/main.css">
+        <script src="js/keyInput.js"></script>
+        <script src="js/game.js"></script>
+    </head>
+    <body>
+        <canvas id="mainCanvas"  width = "600" height="300">
+        </canvas>
+        <br>
+        <span id="turnLeft">Turn left</span> <span id="turnRight">Turn right</span>
+        <br>
+        Player 1:
+        <input type="text" value="A" id="p1Left"> <input type="text"  value="D" id="p1Right"><input type="color" value="#ff0000" class="color"><br>
+        Player 2:
+        <input type="text" value="B" id="p2Left"> <input type="text" value="M" id="p2Right"><input type="color" value="#00ff00" class="color"><br>
+        Player 3:
+        <input type="text" value="ArrowLeft" id="p3Left"> <input type="text" value="ArrowRight" id="p3Right"><input type="color" value="#0000ff" class="color"><br>
+        Player 4:
+        <input type="text" value="1" id="p4Left"> <input type="text" value="3" id="p4Right"><input type="color" value="#007f7f" class="color"><br>
+
+        <div class = "wyborIlosciGraczy">
+            Ilość graczy:
+            <select>
+                <option >2</option>
+                <option >3</option>
+                <option >4</option>
+            </select>
+        </div>
+
+        <button id="start">Start</button>
+        
+        <script>
+            game.init();
+        </script>
+        
+    </body>
+</html>
